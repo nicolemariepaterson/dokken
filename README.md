@@ -22,57 +22,49 @@ flowchart TB
     A[" 
     Receptor Prediction
     ----------------------------------------
-    Predict Receptor Structure
-    OpenFold3
+    Predict Receptor Structure with OpenFold3
     "]
 
     B[" 
     Identify Interface (prior)
     ----------------------------------------
-    Machine Learning Model
-    PyTorch Implementation
+    PyTorch Implementation 
     "]
 
     C[" 
     Side chain optimization
     ----------------------------------------
-    Side-Chain Optimization
-    Flexible Residues from Prior
+    Side-Chain Optimization of Flexible Residues (Prior)
     "]
 
     D[" 
     Bounding Box Generation
     ----------------------------------------
-    Bounding Box Generation
-    Flexible Residue Selection
+    Bounding Box Generation, Flexible Residue Selection for Docking from Prior
     "]
 
     E[" 
     Vina/Smina Ligand Docking
     ----------------------------------------
-    Vina Docking
-    Constrained Search Space
+    Vina/Smina Docking
     "]
 
     F[" 
     Voxelization for Pose Filter
     ----------------------------------------
-    Voxelization
-    Optional Interface Prior Channel
+    Voxelization before Passing to CNN
     "]
 
     G[" 
     Pose Ranking using CNN
     ----------------------------------------
-    CNN Scoring
-    Pose Ranking
+    CNN Scoring, Pose Ranking, Filter
     "]
 
     H[" 
     Comparison and Results
     ----------------------------------------
-    Select Top Poses
-    Relative Affinity Comparison
+    Relative Affinity Comparison top three poses
     "]
 
     A --> B --> C --> D --> E --> F --> G --> H
