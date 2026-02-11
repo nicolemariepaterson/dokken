@@ -11,14 +11,10 @@
 
 <h1 align="center">DOKKEN</h1>
 Guided molecular docking pipeline with automated bounding box generation and filtering using convoluted neural network. 
-
-
+</p>
 ## DOKKEN PIPELINE
 
-```
-mermaid
-flowchart TD
-
+```mermaid
 flowchart TD
 
     A[Predict Receptor Structure<br/>(OpenFold3)]
@@ -37,4 +33,5 @@ flowchart TD
     E --> F
     F --> G
     G --> H
-```
+
+  A --> B --> C --> D --> E --> F --> G --> H
