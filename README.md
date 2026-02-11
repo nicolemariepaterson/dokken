@@ -15,40 +15,75 @@ Guided molecular docking pipeline with automated bounding box generation and fil
 ## DOKKEN PIPELINE
 
 ```mermaid
-flowchart LR
-    %% Layout spacing
-    linkStyle default stroke-width:2px
+## 🔬 DOKKEN Workflow
 
-    %% Nodes
-    A["Predict Receptor Structure<br/>OpenFold3"]
-    B["Compute Interface Prior<br/>ML - PyTorch"]
-    C["Rosetta Side-Chain Optimization"]
-    D["Bounding Box and Flexible Residue Selection"]
-    E["Vina Docking"]
-    F["Voxelize Docked Poses"]
-    G["CNN Pose Filtering and Ranking"]
-    H["Select Top Poses<br/>Relative Affinity Analysis"]
+```mermaid
+flowchart TB
 
-    %% Subgraphs for cleaner grouping
-    subgraph STRUCTURE
-        A --> B --> C
-    end
+    %% Large vertical layout
 
-    subgraph DOCKING
-        C --> D --> E --> F
-    end
+    A[" 
+    Receptor Prediction
+    ----------------------------------------
+    Predict Receptor Structure
+    OpenFold3
+    "]
 
-    subgraph ML_FILTERING
-        F --> G --> H
-    end
+    B[" 
+    Identify Interface (prior)
+    ----------------------------------------
+    Machine Learning Model
+    PyTorch Implementation
+    "]
+
+    C[" 
+    Side chain optimization
+    ----------------------------------------
+    Side-Chain Optimization
+    Flexible Residues from Prior
+    "]
+
+    D[" 
+    Bounding Box Generation
+    ----------------------------------------
+    Bounding Box Generation
+    Flexible Residue Selection
+    "]
+
+    E[" 
+    Vina/Smina Ligand Docking
+    ----------------------------------------
+    Vina Docking
+    Constrained Search Space
+    "]
+
+    F[" 
+    Voxelization for Pose Filter
+    ----------------------------------------
+    Voxelization
+    Optional Interface Prior Channel
+    "]
+
+    G[" 
+    Pose Ranking using CNN
+    ----------------------------------------
+    CNN Scoring
+    Pose Ranking
+    "]
+
+    H[" 
+    Comparison and Results
+    ----------------------------------------
+    Select Top Poses
+    Relative Affinity Comparison
+    "]
+
+    A --> B --> C --> D --> E --> F --> G --> H
 
     %% Styling
-    classDef structure fill:#E3F2FD,stroke:#1E88E5,stroke-width:2px,color:#0D47A1;
-    classDef docking fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#1B5E20;
-    classDef ml fill:#F3E5F5,stroke:#8E24AA,stroke-width:2px,color:#4A148C;
+    classDef big fill:#F0F7FF,stroke:#1565C0,stroke-width:4px,color:#0B3C5D;
+    class A,B,C,D,E,F,G,H big;
 
-    class A,B,C structure;
-    class D,E,F docking;
-    class G,H ml;
+    linkStyle default stroke-width:3px
 ```
 
