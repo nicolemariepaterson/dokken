@@ -34,7 +34,7 @@ flowchart TB
     C[" 
     Side chain optimization
     ----------------------------------------
-    Side-Chain Optimization of Flexible Residues (Prior)
+    Side-Chain Optimization of Flexible Residues (Rosetta, Selected by Prior)
     "]
 
     D[" 
@@ -70,7 +70,7 @@ flowchart TB
     A --> B --> C --> D --> E --> F --> G --> H
 
     %% Styling
-    classDef big fill:#F0F7FF,stroke:#1565C0,stroke-width:4px,color:#0B3C5D;
+    classDef big fill:#F0F7FF,stroke:#1565C0,stroke-width:4px,color:#F08080;
     class A,B,C,D,E,F,G,H big;
 
     linkStyle default stroke-width:3px
