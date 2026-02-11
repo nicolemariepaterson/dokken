@@ -17,21 +17,14 @@ Guided molecular docking pipeline with automated bounding box generation and fil
 ```mermaid
 flowchart LR
 
-    A[Predict Receptor Structure<br/>(OpenFold3)]
-    B[Compute Interface Prior<br/>(ML / PyTorch)]
-    C[Rosetta Side-Chain Optimization<br/>(Flexible residues from prior)]
-    D[Bounding Box + Flexible Residue Selection<br/>(Prior + Rosetta)]
-    E[Vina Docking<br/>(Bounding box + Flexible residues)]
-    F[Voxelize Docked Poses<br/>(Same bounding box + Optional prior channel)]
-    G[ML Pose Filter<br/>(CNN scoring & ranking)]
-    H[Select Top Poses<br/>Relative Affinity Analysis]
+A["Predict Receptor Structure - OpenFold3"]
+B["Compute Interface Prior - ML PyTorch"]
+C["Rosetta Side Chain Optimization"]
+D["Bounding Box and Flexible Residues"]
+E["Vina Docking"]
+F["Voxelize Docked Poses"]
+G["CNN Pose Filter and Ranking"]
+H["Select Top Poses and Relative Affinity"]
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-
-  A --> B --> C --> D --> E --> F --> G --> H
+A --> B --> C --> D --> E --> F --> G --> H
+```
