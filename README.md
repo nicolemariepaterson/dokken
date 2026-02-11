@@ -70,7 +70,7 @@ flowchart TB
     A --> B --> C --> D --> E --> F --> G --> H
 
     %% Styling
-    classDef big fill:#F0F7FF,stroke:#1565C0,stroke-width:4px,color:#F08080;
+    classDef big fill:#FFE4C4,stroke:#1565C0,stroke-width:4px,color:#F08080;
     class A,B,C,D,E,F,G,H big;
 
     linkStyle default stroke-width:3px
