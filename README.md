@@ -1,7 +1,7 @@
 
-<p align="center">
-##  <strong>Molecular Docking Pipeline for Predicting Influenza Host Shifts</strong>
-</p>
+
+##  <h1 align="center">Molecular Docking Pipeline for Predicting Influenza Host Shifts</h1>
+
 
 <p align="center">
   <img src="DOKKEN.png" 
@@ -10,7 +10,7 @@
 </p>
 
 <h1 align="center"></h1>
-Guided molecular docking pipeline with automated bounding box generation and filtering using convoluted neural network. 
+Guided molecular docking pipeline with automated bounding box generation feature and ranked pose filtering by convoluted neural network. 
 
 ## <h1 align="center">Pipeline Workflow </h1>
 
