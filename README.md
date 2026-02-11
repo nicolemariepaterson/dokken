@@ -15,9 +15,6 @@ Guided molecular docking pipeline with automated bounding box generation and fil
 ## DOKKEN PIPELINE
 
 ```mermaid
-## 🔬 DOKKEN Workflow
-
-```mermaid
 flowchart TB
 
     %% Large vertical layout
