@@ -12,6 +12,27 @@
 <h1 align="center"></h1>
 Guided molecular docking pipeline with automated bounding box generation feature and ranked pose filtering by convoluted neural network. 
 
+**Dokken** is a computational surveillance project intended for use in risk assessment of viral host-switching events *before they happen*.
+
+Previous studies have shown that influenza viruses adapt to humans by acquiring mutations in hemagglutinin (HA) that increase binding to human-type sialic acid receptors (α2,6-linked) instead of the avian-type receptors (α2,3-linked). In practical terms, mutations that strengthen binding to the human receptor make transmission in humans more likely.
+
+This project takes advantage of recent advances in protein structure prediction using OpenFold3 (OF3). From OF3 predicted structures, the receptor binding site is refined, side-chain conformations are optmized (Rosetta) and flexible docking is performed (Vina/Smina). Docked poses are ranked and filtered using neural network–based scoring models.
+
+The pipeline is built to run at high throughput. A graph neural network trained on known crystal structures bound to sialylated glycans predicts the binding interface in each OF3-generated structure. 
+
+That predicted interface (the prior) is then used to:
+
+* Automate definition of the docking region (bounding box)
+* Identify which residues need side-chain optimization for Rosetta-based energy minimization
+* Select which residues will be set to flexible for sidechain docking
+
+These steps usually require manual setup in most docking workflows. Automating them removes a major bottleneck created by the need for manual intervention. Several "sanity checks" are output as visualizations that can be used to quickly assess whether the docking result achieved is rational. 
+
+The approach is simple and modular and can be adapted to other receptor–ligand systems, including antibody–antigen interactions. Please do!
+
+---
+
+
 ## <h1 align="center">Pipeline Workflow </h1>
 
 ```mermaid
@@ -75,5 +96,3 @@ flowchart TB
 
     linkStyle default stroke-width:3px
 ```
-Dokken is a pilot study intended to test the efficacy of _in silico_ surveillance methodology for risk assessment of host switching events, _before they happen. _ Several canonical studies have shown the requirement of adaptive mutations increasing the affinity of binding to human receptor isomers of glycated sialic acid receptors (Neu-2,6)-glyc over the isomer commonly found in the bird receptors (Neu-2,3)-glyc in the hemagglutinin receptor of influenza with primary host endemicity in birds. In simple terms, transmission in humans is facilitated by mutations that increase affinity to the human receptor. This project aims to take advantage of key advances in protein structural modeling prediction using OpenFold3, coupled with advanced optimization of side chain conformations in the receptor binding site and flexible residue docking with ranked poses and filtering by convolutional neural network algorithms. The pipeline is high throughput and predicts the binding site in openfold generated structures based on graph neural network training of a model to identify the site of the binding interface from a database of crystal structures. This interface is then used to automate the bounding box used to limit the docking region and identify sites within the binding interface necessary for sidechain energy minimization efforts in Rosetta. Automated identification of the bounding box and side chains required to be optimized and flexible are the pain points that require manual intervention in most docking pipelines. This is intended to be modular and the approach can be reproduced for other receptors and antibody: antigen interfaces. 
-
