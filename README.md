@@ -6,13 +6,15 @@
 <p align="center">
   <img src="DOKKEN.png" 
        alt="DOKKEN!!!"
-       width="800"/>
-</p>
+       width="800"/> </p>
 
 <h1 align="center"></h1>
 
-**Dokken** is a computational surveillance project intended for use in risk assessment of viral host-switching events *before they happen*.
+**Dokken**
+is a computational surveillance project intended for use in risk assessment of viral host-switching events _before they happen_.
+
 It is a guided molecular docking pipeline with automated bounding box generation and ranked pose filtering powered by trained convolutional neural network. 
+
 
 **Background** 
 Previous studies have shown that bird-adapted influenza viruses adapt to human hosts by acquiring mutations in hemagglutinin (HA) that increase binding to human-type sialic acid receptors (α2,6-linked) in preference to the avian-type receptors (α2,3-linked). In practical terms, mutations that strengthen binding to the human receptor make transmission more likely.
