@@ -48,19 +48,19 @@ flowchart TB
     B[" 
     Identify Interface (prior)
     ----------------------------------------
-    PyTorch Implementation 
+    PyTorch, GCN
     "]
 
     C[" 
     Side chain optimization
     ----------------------------------------
-    Side-Chain Optimization of Flexible Residues (Rosetta, Selected by Prior)
+    Side-Chain Optimization of Flexible Residues using pocket_relax
     "]
 
     D[" 
     Bounding Box Generation
     ----------------------------------------
-    Bounding Box Generation, Flexible Residue Selection for Docking from Prior
+    Bounding Box Generation, Flexible Residue Selection for docking
     "]
 
     E[" 
@@ -70,24 +70,18 @@ flowchart TB
     "]
 
     F[" 
-    Voxelization for Pose Filter
+    ML Pose Filter
     ----------------------------------------
-    Voxelization before Passing to CNN
+    Ligand vectorization, ML and GCN filter
     "]
 
     G[" 
-    Pose Ranking using CNN
+    Pose Ranking and Results
     ----------------------------------------
-    CNN Scoring, Pose Ranking, Filter
+    Scoring, Pose Ranking, ΔΔG calculation
     "]
 
-    H[" 
-    Comparison and Results
-    ----------------------------------------
-    Relative Affinity Comparison top three poses
-    "]
-
-    A --> B --> C --> D --> E --> F --> G --> H
+    A --> B --> C --> D --> E --> F --> G
 
     %% Styling
     classDef big fill:#FFE4C4,stroke:#1565C0,stroke-width:4px,color:#800000;
@@ -95,3 +89,9 @@ flowchart TB
 
     linkStyle default stroke-width:3px
 ```
+
+
+
+
+
+
