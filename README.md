@@ -46,13 +46,13 @@ flowchart TB
     "]
 
     B[" 
-    Identify Interface (prior)
+    Identify Recptor:Ligand Interface 
     ----------------------------------------
     PyTorch, GCN
     "]
 
     C[" 
-    Side chain optimization
+    Binding pocket optimization
     ----------------------------------------
     Side-Chain Optimization of Flexible Residues using pocket_relax
     "]
