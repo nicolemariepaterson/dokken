@@ -1,0 +1,4 @@
+--center_x 10.31 --center_y -17.82 --center_z -44.84 \
+--size_x 25.0 --size_y 25.0 --size_z 25.0 \
+--flex H3N6_Chicken_Nanchang_sample5_prepped_flex.resfile \
+--exhaustiveness 16 --num_modes 20

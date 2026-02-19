@@ -1,0 +1,4 @@
+SEQUENCE: 
+SCORE: total_score dslf_fa13    fa_atr    fa_dun   fa_elec fa_intra_rep fa_intra_sol_xover4              fa_rep              fa_sol hbond_bb_sc hbond_lr_bb    hbond_sc hbond_sr_bb lk_ball_wtd       omega     p_aa_pp pro_close rama_prepro         ref yhh_planarity description 
+SCORE:   -5036.994   -17.901 -9697.745  1940.563 -3147.509       18.271             336.191             924.794            6150.650    -440.212    -424.123    -363.338    -518.267    -247.315     168.980    -380.192     4.536      55.720     597.902         2.000 H3N6_Chicken_Nanchang_sample5_0001
+SCORE:   -5004.383   -17.873 -9692.000  1944.186 -3155.966       18.235             342.799             924.596            6157.880    -430.031    -423.674    -368.222    -518.990    -244.798     174.447    -378.975     4.471      59.591     597.902         2.041 H3N6_Chicken_Nanchang_sample5_0001

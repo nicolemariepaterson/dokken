@@ -1,0 +1,10 @@
+2026-02-18 12:33:11,265 | INFO | Processing H3N6_Chicken_Nanchang_model2.pdb
+2026-02-18 12:33:11,646 | WARNING | No top residues predicted for H3N6_Chicken_Nanchang_model2.pdb. Skipping.
+2026-02-18 12:33:11,646 | INFO | Processing PR_8.pdb
+2026-02-18 12:33:12,019 | WARNING | No top residues predicted for PR_8.pdb. Skipping.
+2026-02-18 12:33:12,019 | INFO | Processing H3N6_Chicken_Nanchang_sample5.pdb
+2026-02-18 12:33:12,402 | WARNING | No top residues predicted for H3N6_Chicken_Nanchang_sample5.pdb. Skipping.
+2026-02-18 12:33:12,402 | INFO | Processing H3N6_Chicken_Nanchang_sample4.pdb
+2026-02-18 12:33:12,809 | WARNING | No top residues predicted for H3N6_Chicken_Nanchang_sample4.pdb. Skipping.
+2026-02-18 12:33:12,809 | INFO | Processing H3N6_Chicken_Nanchang_sample3.pdb
+2026-02-18 12:33:13,181 | WARNING | No top residues predicted for H3N6_Chicken_Nanchang_sample3.pdb. Skipping.

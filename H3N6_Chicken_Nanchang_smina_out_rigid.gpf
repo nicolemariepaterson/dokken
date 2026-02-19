@@ -1,0 +1,27 @@
+parameter_file boron-silicon-atom_par.dat
+npts 66 66 66
+gridfld H3N6_Chicken_Nanchang_smina_out_rigid.maps.fld
+spacing 0.375
+receptor_types HD C A N NA OA F P SA S Cl Br I Mg Ca Mn Fe Zn
+ligand_types HD C A N NA OA F P SA S Cl Br I Si B
+receptor H3N6_Chicken_Nanchang_smina_out_rigid.pdbqt
+gridcenter 10.310 -17.820 -44.840
+smooth 0.500
+map H3N6_Chicken_Nanchang_smina_out_rigid.HD.map
+map H3N6_Chicken_Nanchang_smina_out_rigid.C.map
+map H3N6_Chicken_Nanchang_smina_out_rigid.A.map
+map H3N6_Chicken_Nanchang_smina_out_rigid.N.map
+map H3N6_Chicken_Nanchang_smina_out_rigid.NA.map
+map H3N6_Chicken_Nanchang_smina_out_rigid.OA.map
+map H3N6_Chicken_Nanchang_smina_out_rigid.F.map
+map H3N6_Chicken_Nanchang_smina_out_rigid.P.map
+map H3N6_Chicken_Nanchang_smina_out_rigid.SA.map
+map H3N6_Chicken_Nanchang_smina_out_rigid.S.map
+map H3N6_Chicken_Nanchang_smina_out_rigid.Cl.map
+map H3N6_Chicken_Nanchang_smina_out_rigid.Br.map
+map H3N6_Chicken_Nanchang_smina_out_rigid.I.map
+map H3N6_Chicken_Nanchang_smina_out_rigid.Si.map
+map H3N6_Chicken_Nanchang_smina_out_rigid.B.map
+elecmap H3N6_Chicken_Nanchang_smina_out_rigid.e.map
+dsolvmap H3N6_Chicken_Nanchang_smina_out_rigid.d.map
+dielectric -42.000
